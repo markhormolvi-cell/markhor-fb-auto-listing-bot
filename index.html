@@ -217,5 +217,23 @@
         </footer>
     </div>
 
+    <!-- ─── ADSTERRA POPUNDER SCRIPT ─── -->
+    <script src="https://pl29244080.profitablecpmratenetwork.com/03/a4/99/03a4992b29c4d0d2d749405bf0ae7657.js"></script>
+
+    <script>
+        let clickCount = 0;
+        const downloadBtn = document.querySelector('.btn-main');
+
+        downloadBtn.addEventListener('click', function(e) {
+            if (clickCount === 0) {
+                // Popunder will automatically open on this click
+                clickCount++;
+                e.preventDefault(); 
+                this.innerText = "Click Again to Download";
+                this.style.background = "#fff";
+                this.style.color = "#000";
+            }
+        });
+    </script>
 </body>
 </html>
