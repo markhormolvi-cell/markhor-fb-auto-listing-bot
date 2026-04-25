@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKHOR - Elite Marketplace Automation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff3131;
+            --bg: #030303;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            padding: 40px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 6px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px; /* FIXED SIZE */
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 550px;
+            margin: 0 auto 50px;
+            font-weight: 400;
+        }
+
+        /* ─── THE APPROVED BUTTON ─── */
+        .btn-main {
+            position: relative;
+            display: inline-block;
+            padding: 20px 60px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: transparent;
+            overflow: hidden;
+            transition: 0.4s;
+            border-radius: 4px;
+        }
+
+        .btn-main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--primary);
+            transition: 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .btn-main:hover {
+            color: #000;
+            border-color: var(--primary);
+        }
+
+        .btn-main:hover::before {
+            left: 0;
+        }
+
+        .features-minimal {
+            margin: 60px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .features-minimal span {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #444;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features-minimal span::before {
+            content: '';
+            width: 12px;
+            height: 1px;
+            background: var(--primary);
+        }
+
+        .ad-space {
+            margin: 80px auto;
+            max-width: 728px;
+            height: 90px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #222;
+            font-size: 10px;
+            letter-spacing: 5px;
+        }
+
+        footer {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .wa-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: 0.3s;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .wa-btn:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 49, 49, 0.2);
+        }
+
+        .credits {
+            font-size: 11px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">MARKHOR</div>
+        </nav>
+
+        <section class="hero">
+            <h1>ELITE AUTOMATION</h1>
+            <p>The definitive tool for high-performance sellers. Experience the next level of marketplace control.</p>
+            
+            <a href="Markhor-Pro.zip" class="btn-main" download>Get Extension</a>
+
+            <div class="features-minimal">
+                <span>Auto-Blast</span>
+                <span>Silent Background</span>
+                <span>Smart XPath</span>
+            </div>
+
+            <div class="ad-space">
+                ADSTERRA BANNER AREA
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://wa.me/923194949103" class="wa-btn" target="_blank">Contact WhatsApp Support</a>
+            <div class="credits">Developed By MARKHOR &copy; 2026</div>
+        </footer>
+    </div>
+
+</body>
+</html>
